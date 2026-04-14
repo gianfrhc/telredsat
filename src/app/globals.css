@@ -189,7 +189,7 @@ input:focus, textarea:focus {
 .logo-img { transition: filter 0.3s ease; }
 .header:not(.scrolled) .logo-img { filter: brightness(0) invert(1); }
 .nav-links > ul { display: flex; gap: 15px; margin: 0; align-items: center; height: 100%; }  
-.nav-links a, .dropdown-title { color: var(--text-dark); font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px; transition: var(--transition); text-decoration: none; }  
+.nav-links a, .dropdown-title { color: var(--text-dark); font-weight: 600; text-transform: uppercase; font-size: 0.98rem; letter-spacing: 0.5px; transition: var(--transition); text-decoration: none; }  
 .header:not(.scrolled) .nav-links > ul > li > a, .header:not(.scrolled) .dropdown-title { color: var(--bg-color); cursor: pointer; }  
 .nav-links > ul > li > a:hover, .dropdown-title:hover { color: var(--accent-color); } 
 .dropdown { position: relative; display: flex; align-items: center; cursor: pointer; padding: 15px 0; }
@@ -197,7 +197,7 @@ input:focus, textarea:focus {
 .dropdown-menu { display: none; position: absolute; top: 100%; left: -20px; background: var(--primary-color); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); border-radius: 6px; padding: 10px 0; min-width: 260px; z-index: 10000; flex-direction: column; border: 1px solid rgba(255,255,255,0.1); }
 .dropdown-menu.is-open { display: flex; }
 .dropdown-menu li { padding: 0; margin: 0; width: 100%; }
-.dropdown-menu a { display: block; padding: 12px 25px; color: #ffffff !important; text-transform: none; font-weight: 500; font-size: 0.9rem; border-bottom: 1px solid rgba(255,255,255,0.08); transition: all 0.15s ease; }
+.dropdown-menu a { display: block; padding: 12px 25px; color: #ffffff !important; text-transform: none; font-weight: 500; font-size: 1.05rem; border-bottom: 1px solid rgba(255,255,255,0.08); transition: all 0.15s ease; }
 .dropdown-menu li:last-child a { border-bottom: none; }
 .dropdown-menu a:hover { background: rgba(122, 202, 228, 0.15); color: var(--accent-color) !important; padding-left: 30px; }
 /* UI Grid & Utilities */
