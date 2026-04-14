@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: telredsat_web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    environment:
+      # Las variables de entorno de producción van aquí
+      - NODE_ENV=production
+      - PORT=3000
