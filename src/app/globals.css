@@ -230,11 +230,16 @@ input:focus, textarea:focus {
 .industry-card { height: 400px; border-radius: var(--border-radius); display: flex; align-items: flex-end; position: relative; overflow: hidden; background-color: var(--primary-color); }
 .industry-card.bg-mining { background: linear-gradient(rgba(0,0,0,0.1), rgba(27,39,60,0.9)), url('/mineria_banner_ai_1775921440140.png') no-repeat center center/cover; }
 .industry-card.bg-energy { background: linear-gradient(rgba(0,0,0,0.1), rgba(27,39,60,0.9)), url('/internet_banner_ai_1775921647345.png') no-repeat center center/cover; }
+.industry-card.bg-transport { background: linear-gradient(rgba(0,0,0,0.1), rgba(27,39,60,0.9)), url('/casos_exito_banner_ai_1775923996675.png') no-repeat center center/cover; }
+.industry-card.bg-security { background: linear-gradient(rgba(0,0,0,0.1), rgba(27,39,60,0.9)), url('/telefonia_banner_ai_1775921573551.png') no-repeat center center/cover; }
 .industry-content { padding: 40px; width: 100%; color: var(--bg-color); z-index: 2; position: relative; }
 .industry-content h3 { color: var(--accent-color); font-size: 2rem; margin-bottom: 10px; }
 .industry-content p { margin-bottom: 20px; font-weight: 300; line-height: 1.6; }
 .link-arrow { font-weight: 700; color: var(--bg-color); display: inline-flex; align-items: center; gap: 10px; }
 .link-arrow:hover { color: var(--accent-color); gap: 15px; }
+
+.link-arrow-dark { font-weight: 700; color: var(--primary-color); display: inline-flex; align-items: center; gap: 10px; transition: var(--transition); }
+.link-arrow-dark:hover { color: var(--accent-color); gap: 15px; }
 
 /* Stats */
 .stats { text-align: center; color: var(--bg-color); }

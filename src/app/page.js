@@ -40,7 +40,8 @@ export default function Home() {
                 </svg>
               </div>
               <h3>Internet Satelital (VSAT)</h3>
-              <p>Conectividad de banda ancha confiable en cualquier punto geográfico, asegurando la continuidad de sus operaciones empresariales.</p>
+              <p style={{marginBottom: '20px'}}>Conectividad de banda ancha confiable en cualquier punto geográfico, asegurando la continuidad de sus operaciones empresariales.</p>
+              <a href="/soluciones/internet-satelital" className="link-arrow-dark">Leer Más &rarr;</a>
             </div>
             <div className="card">
               <div className="card-icon">
@@ -51,7 +52,8 @@ export default function Home() {
                 </svg>
               </div>
               <h3>Telefonía Satelital</h3>
-              <p>Comunicaciones de voz seguras en áreas donde las redes celulares tradicionales fallan, protegiendo a su personal y activos.</p>
+              <p style={{marginBottom: '20px'}}>Comunicaciones de voz seguras en áreas donde las redes celulares tradicionales fallan, protegiendo a su personal y activos.</p>
+              <a href="/soluciones/telefonia-satelital" className="link-arrow-dark">Leer Más &rarr;</a>
             </div>
             <div className="card">
               <div className="card-icon">
@@ -61,9 +63,21 @@ export default function Home() {
                 </svg>
               </div>
               <h3>Rastreo GPS de Activos</h3>
-              <p>Monitoreo continuo de flotas y carga valiosa a través de plataformas avanzadas con reportes en tiempo real y geocercas.</p>
+              <p style={{marginBottom: '20px'}}>Monitoreo continuo de flotas y carga valiosa a través de plataformas avanzadas con reportes en tiempo real y geocercas.</p>
+              <a href="/soluciones/rastreo-gps" className="link-arrow-dark">Leer Más &rarr;</a>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section-padding" style={{ backgroundColor: 'var(--primary-color)', color: 'var(--bg-color)', textAlign: 'center' }}>
+        <div className="container">
+          <h2 style={{ fontSize: '2.5rem', marginBottom: '15px' }}>¿Su operación no puede permitirse estar desconectada?</h2>
+          <p style={{ fontSize: '1.2rem', marginBottom: '30px', color: '#a9b5c5', maxWidth: '800px', margin: '0 auto 30px' }}>
+            Nuestros ingenieros en TELREDSAT están listos para analizar su escenario operativo y diseñar la plataforma de comunicación más resistente para su equipo.
+          </p>
+          <a href="/contacto" className="btn-secondary"><span>Solicitar Asesoría Técnica</span></a>
         </div>
       </section>
 
@@ -84,6 +98,20 @@ export default function Home() {
                 <h3>Energía y Petróleo</h3>
                 <p>Garantizamos el flujo de datos para plataformas offshore, ductos y plantas de generación eléctrica en lugares de difícil acceso.</p>
                 <a href="/industrias/energia-petroleo" className="link-arrow">Descubrir Solución &rarr;</a>
+              </div>
+            </div>
+            <div className="industry-card bg-transport">
+              <div className="industry-content">
+                <h3>Transporte y Logística</h3>
+                <p>Mantenemos su flota, carga marítima y convoyes de alta prioridad digitalmente rastreados desde el punto de origen hasta su destino final.</p>
+                <a href="/industrias/transporte-logistica" className="link-arrow">Ver Casos de Transporte &rarr;</a>
+              </div>
+            </div>
+            <div className="industry-card bg-security">
+              <div className="industry-content">
+                <h3>Seguridad y Emergencias</h3>
+                <p>Las fuerzas del orden público y equipos de defensa civil confían en nuestras soluciones cuando todas las demás redes locales colapsan.</p>
+                <a href="/industrias/seguridad-emergencias" className="link-arrow">Descubrir Solución &rarr;</a>
               </div>
             </div>
           </div>
