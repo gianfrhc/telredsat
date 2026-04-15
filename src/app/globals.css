@@ -241,6 +241,9 @@ input:focus, textarea:focus {
 .link-arrow-dark { font-weight: 700; color: var(--primary-color); display: inline-flex; align-items: center; gap: 10px; transition: var(--transition); }
 .link-arrow-dark:hover { color: var(--accent-color); gap: 15px; }
 
+.iso-badge { transition: transform 0.3s ease; }
+.iso-badge:hover { transform: translateY(-5px); }
+
 /* Stats */
 .stats { text-align: center; color: var(--bg-color); }
 .stat-box h3 { font-size: 4rem; color: var(--accent-color); margin-bottom: 10px; }

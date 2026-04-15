@@ -155,6 +155,16 @@ export default function Home() {
               <p>Experiencia en Telecomunicaciones</p>
             </div>
           </div>
+
+          <div style={{ marginTop: '60px', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '50px', textAlign: 'center' }}>
+            <h3 style={{ color: 'var(--bg-color)', marginBottom: '30px', fontSize: '1.3rem', fontWeight: '500', textTransform: 'uppercase', letterSpacing: '2px' }}>Certificaciones Internacionales</h3>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '40px', flexWrap: 'wrap', alignItems: 'center' }}>
+              <img className="iso-badge" src="/iso/ISO%209001.jpg" alt="ISO 9001" style={{ height: '90px', borderRadius: '6px', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }} />
+              <img className="iso-badge" src="/iso/ISO%2014001.jpg" alt="ISO 14001" style={{ height: '90px', borderRadius: '6px', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }} />
+              <img className="iso-badge" src="/iso/ISO%2027001.jpg" alt="ISO 27001" style={{ height: '90px', borderRadius: '6px', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }} />
+              <img className="iso-badge" src="/iso/ISO%2037001.jpg" alt="ISO 37001" style={{ height: '90px', borderRadius: '6px', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }} />
+            </div>
+          </div>
         </div>
       </section>
 
