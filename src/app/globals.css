@@ -143,6 +143,35 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--accent-color);
 }
 
+/* Catalog Button Styling */
+.btn-catalog {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--secondary-color);
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition);
+  border: 2px solid var(--secondary-color);
+  transform: skewX(-10deg);
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.btn-catalog span {
+  display: inline-block;
+  transform: skewX(10deg);
+}
+
+.btn-catalog:hover {
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
+}
+
 /* Section Spacing */
 .section-padding {
   padding: 80px 0;
@@ -183,6 +212,7 @@ input:focus, textarea:focus {
 /* Component Styles */  
 .header { position: fixed; top: 0; width: 100%; padding: 20px 0; z-index: 1000; transition: var(--transition); background: transparent; }  
 .header.scrolled { background: rgba(255, 255, 255, 0.95); box-shadow: var(--shadow); padding: 15px 0; border-bottom: 2px solid var(--primary-color); }  
+.header .container { max-width: 1350px; }
 .header-content { display: flex; justify-content: space-between; align-items: center; }  
 .logo h2 { margin: 0; color: var(--primary-color); transition: var(--transition); font-weight: 800; }  
 .header:not(.scrolled) .logo h2 { color: var(--bg-color); }
@@ -203,6 +233,7 @@ input:focus, textarea:focus {
 /* UI Grid & Utilities */
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
 .bg-light { background-color: var(--bg-light); }
 .bg-dark { background-color: var(--primary-color); }
 .bg-accent { background-color: var(--accent-color); }
@@ -251,11 +282,15 @@ input:focus, textarea:focus {
 
 /* Footer */
 .footer { background-color: var(--primary-color); color: var(--text-light); padding: 60px 0 20px; }
-.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+.footer-grid { display: grid; grid-template-columns: 3fr 1fr 1fr 1.5fr; gap: 20px; margin-bottom: 20px; }
 .footer-col h3, .footer-col h4 { color: var(--accent-color); margin-bottom: 20px; }
 .footer-col p { line-height: 1.6; margin-bottom: 15px; color: #a9b5c5; }
-.footer-col ul li { margin-bottom: 10px; }
+.footer-col ul li { margin-bottom: 15px; }
 .footer-col ul li a { color: #a9b5c5; }
+
+.contact-link { display: flex; align-items: flex-start; gap: 10px; color: inherit; text-decoration: none; transition: var(--transition); }
+.contact-link.align-center { align-items: center; }
+.contact-link:hover { color: var(--accent-color) !important; }
 .footer-col ul li a:hover { color: var(--accent-color); }
 
 .footer-contact p { display: flex; align-items: flex-start; gap: 12px; }
@@ -425,7 +460,7 @@ input:focus, textarea:focus {
   .whatsapp-float {
     width: 60px;
     height: 60px;
-    bottom: 20px;
+    bottom: 65px;
     right: 20px;
   }
   .whatsapp-float svg {

@@ -1,3 +1,5 @@
+import PartnersMarquee from '../components/PartnersMarquee';
+
 const partners = [
   "logo globalstar.svg",
   "logo inmarsat.svg",
@@ -121,24 +123,13 @@ export default function Home() {
       {/* Partners Section */}
       <section className="partners-section">
         <div className="container">
-          <h3>Principales Partners</h3>
+          <h2 className="section-title">Principales Partners</h2>
         </div>
-        <div className="marquee-container">
-          <div className="marquee-content">
-            {partners.map((partner, i) => (
-              <img key={i} src={`/partners/${partner}`} alt={partner.replace('.svg', '').replace('.png', '').replace('logo ', '').toUpperCase()} className="partner-logo" />
-            ))}
-          </div>
-          <div className="marquee-content" aria-hidden="true">
-            {partners.map((partner, i) => (
-              <img key={i + partners.length} src={`/partners/${partner}`} alt={partner.replace('.svg', '').replace('.png', '').replace('logo ', '').toUpperCase()} className="partner-logo" />
-            ))}
-          </div>
-        </div>
+        <PartnersMarquee partners={partners} />
       </section>
 
       {/* Por qué elegirnos Section */}
-      <section id="nosotros" className="section-padding bg-dark">
+      <section id="nosotros" className="section-padding bg-dark" style={{ paddingBottom: '40px' }}>
         <div className="container">
           <h2 className="section-title text-white">¿Por qué confiar en Telredsat?</h2>
           <div className="grid-3 stats">
@@ -157,7 +148,7 @@ export default function Home() {
           </div>
 
           <div style={{ marginTop: '60px', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '50px', textAlign: 'center' }}>
-            <h3 style={{ color: 'var(--bg-color)', marginBottom: '30px', fontSize: '1.3rem', fontWeight: '500', textTransform: 'uppercase', letterSpacing: '2px' }}>Certificaciones Internacionales</h3>
+            <h3 style={{ color: 'var(--accent-color)', marginBottom: '40px', fontSize: '2rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px' }}>Certificaciones Internacionales</h3>
             <div style={{ display: 'flex', justifyContent: 'center', gap: '40px', flexWrap: 'wrap', alignItems: 'center' }}>
               <img className="iso-badge" src="/iso/ISO%209001.jpg" alt="ISO 9001" style={{ height: '90px', borderRadius: '6px', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }} />
               <img className="iso-badge" src="/iso/ISO%2014001.jpg" alt="ISO 14001" style={{ height: '90px', borderRadius: '6px', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }} />

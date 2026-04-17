@@ -57,7 +57,7 @@ export default function Header() {
       <div className="container header-content">
         <div className="logo">
           <Link href="/" onClick={closeMobileMenu}>
-            <img src={scrolled ? "/logo-dark.png" : "/logo.png"} alt="Telredsat Logo" className="logo-img" style={{ height: '40px', width: 'auto', display: 'block' }} />
+            <img src={scrolled ? "/logo-dark.png" : "/logo.png"} alt="Telredsat Logo" className="logo-img" style={{ height: '50px', width: 'auto', display: 'block' }} />
           </Link>
         </div>
         
@@ -104,6 +104,22 @@ export default function Header() {
             </li>
 
             <li><Link href="/casos-de-exito" onClick={closeMobileMenu}>Casos de Éxito</Link></li>
+            
+            <li
+              className="dropdown"
+              onMouseEnter={() => handleDropdownEnter('productos')}
+              onMouseLeave={handleDropdownLeave}
+              onClick={() => toggleDropdown('productos')}
+            >
+              <span className="dropdown-title">Productos ▼</span>
+              <ul className={`dropdown-menu ${openDropdown === 'productos' ? 'is-open' : ''}`}>
+                <li><Link href="/productos/telefonia-satelital" onClick={closeMobileMenu}>Telefonía Satelital</Link></li>
+                <li><Link href="/productos/terminales-satelitales" onClick={closeMobileMenu}>Terminales Satelitales</Link></li>
+                <li><Link href="/productos/rastreo-satelital" onClick={closeMobileMenu}>Rastreo Satelital</Link></li>
+                <li><Link href="/productos/accesorios" onClick={closeMobileMenu}>Accesorios</Link></li>
+              </ul>
+            </li>
+
             <li><Link href="/#nosotros" onClick={closeMobileMenu}>Nosotros</Link></li>
             <li className="mobile-only"><Link href="/contacto" onClick={closeMobileMenu}>Contacto</Link></li>
           </ul>
