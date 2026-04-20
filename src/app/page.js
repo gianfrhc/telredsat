@@ -75,7 +75,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="section-padding" style={{ backgroundColor: 'var(--primary-color)', color: 'var(--bg-color)', textAlign: 'center' }}>
         <div className="container">
-          <h2 style={{ fontSize: '2.5rem', marginBottom: '15px' }}>¿Su operación no puede permitirse estar desconectada?</h2>
+          <h2 style={{ fontSize: '2.5rem', marginBottom: '15px', color: 'var(--bg-color)' }}>¿Su operación no puede permitirse estar desconectada?</h2>
           <p style={{ fontSize: '1.2rem', marginBottom: '30px', color: '#a9b5c5', maxWidth: '800px', margin: '0 auto 30px' }}>
             Nuestros ingenieros en TELREDSAT están listos para analizar su escenario operativo y diseñar la plataforma de comunicación más resistente para su equipo.
           </p>

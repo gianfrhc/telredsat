@@ -64,7 +64,7 @@ export default function Footer() {
             </a>
           </p>
           <p style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <a href="https://api.whatsapp.com/send/?phone=51985105907&text=Hola%20Telredsat,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20conectividad%20satelital." target="_blank" rel="noopener noreferrer" className="contact-link align-center">
+            <a href="tel:+51985105907" className="contact-link align-center">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, width: '20px', height: '20px' }}>
                 <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
                 <line x1="12" y1="18" x2="12.01" y2="18"></line>
@@ -78,6 +78,17 @@ export default function Footer() {
               <span>+51 (01) 4166262</span>
             </a>
           </p>
+          <div style={{ marginTop: '25px' }}>
+            <Link href="/libro-reclamaciones" className="libro-reclamaciones-custom" aria-label="Libro de Reclamaciones">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <div className="lr-text">
+                LIBRO DE<br/>RECLAMACIONES
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="footer-bottom">
