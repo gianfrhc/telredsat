@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className={`${montserrat.variable}`}>
-      <body>
+      <body suppressHydrationWarning>
         <Header />
         <main>{children}</main>
         <Footer />

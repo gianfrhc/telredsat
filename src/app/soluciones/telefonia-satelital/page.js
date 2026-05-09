@@ -1,3 +1,5 @@
+export const metadata = { title: 'Telefonía Satelital' };
+
 export default function TelefoniaSatelital() {
   return (
     <div className="internal-page">

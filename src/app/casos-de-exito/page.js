@@ -1,3 +1,5 @@
+export const metadata = { title: 'Casos de Éxito' };
+
 export default function CasosDeExito() {
   return (
     <div className="internal-page">
@@ -16,6 +18,15 @@ export default function CasosDeExito() {
           </div>
 
           <div className="grid-3" style={{gridTemplateColumns: '1fr', gap: '50px'}}>
+            {/* MTC */}
+            <div className="card" style={{display: 'flex', flexDirection: 'row', gap: '30px', textAlign: 'left', padding: '40px', alignItems: 'center'}}>
+              <div style={{flex: '1'}}>
+                <h3 style={{fontSize: '1.8rem', color: 'var(--primary-color)'}}>Ministerio de Transportes y Comunicaciones (MTC)</h3>
+                <h4 style={{color: 'var(--accent-color)', marginBottom: '15px'}}>Solución Implementada: Red de Telefonía Satelital</h4>
+                <p>Al ser la máxima entidad reguladora del país, el MTC requiere coordinar de forma ininterrumpida proyectos de infraestructura y emergencias viales. Telredsat ha provisto y mantiene operativa una extensa flota de terminales de telefonía satelital para la entidad. Esto garantiza que sus funcionarios mantengan comunicación permanente de voz y texto desde cualquier punto remoto del territorio peruano.</p>
+              </div>
+            </div>
+
             {/* INDECI */}
             <div className="card" style={{display: 'flex', flexDirection: 'row', gap: '30px', textAlign: 'left', padding: '40px', alignItems: 'center'}}>
               <div style={{flex: '1'}}>
@@ -42,6 +53,24 @@ export default function CasosDeExito() {
                 <p>Las embarcaciones de la Marina de Guerra precisaban enlaces de datos seguros en el dominio marítimo ininterrumpibles. Telredsat implementó sistemas satelitales marítimos autoapuntables (antenas estabilizadas), lo que asegura que buques oceánicos mantengan un acceso a datos constante para radares, comunicación estratégica y reportes en tiempo real, indiferentemente a las inclemencias marítimas.</p>
               </div>
             </div>
+
+            {/* MIDAGRI */}
+            <div className="card" style={{display: 'flex', flexDirection: 'row', gap: '30px', textAlign: 'left', padding: '40px', alignItems: 'center'}}>
+              <div style={{flex: '1'}}>
+                <h3 style={{fontSize: '1.8rem', color: 'var(--primary-color)'}}>Ministerio de Desarrollo Agrario y Riego (MIDAGRI)</h3>
+                <h4 style={{color: 'var(--accent-color)', marginBottom: '15px'}}>Solución Implementada: Sistema de Rastreo y Monitoreo GPS</h4>
+                <p>Implementación de una plataforma integral de rastreo y monitoreo satelital GPS (Contrato N° 006-2024) para el seguimiento en tiempo real de activos de la entidad a nivel nacional. Esta solución asegura la visibilidad operativa en zonas rurales y agrarias de alta complejidad donde la cobertura celular es inexistente, garantizando la seguridad del personal técnico y la optimización de las rutas logísticas del ministerio.</p>
+              </div>
+            </div>
+            {/* ELECTROSUR ESTE */}
+            <div className="card" style={{display: 'flex', flexDirection: 'row', gap: '30px', textAlign: 'left', padding: '40px', alignItems: 'center'}}>
+              <div style={{flex: '1'}}>
+                <h3 style={{fontSize: '1.8rem', color: 'var(--primary-color)'}}>Electro Sur Este S.A.A.</h3>
+                <h4 style={{color: 'var(--accent-color)', marginBottom: '15px'}}>Solución Implementada: Rastreo Satelital GPS de Flotas</h4>
+                <p>Para esta importante empresa de distribución eléctrica, la seguridad y coordinación de sus cuadrillas de mantenimiento en zonas altoandinas y rurales es vital. Implementamos un sistema avanzado de rastreo GPS satelital que permite a su centro de control monitorear la ubicación exacta, rutas y alertas de emergencia de todos sus vehículos en tiempo real, superando por completo las limitaciones de las redes celulares convencionales.</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

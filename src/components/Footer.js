@@ -7,8 +7,8 @@ export default function Footer() {
         <div className="footer-col">
           <img src="/logo-light.png" alt="Telredsat Logo" style={{ height: '72px', marginBottom: '20px', display: 'block' }} />
           <p>Conectando lo remoto. Soluciones satelitales de alta tecnología para industrias críticas.</p>
-          <div className="social-links" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <span style={{ fontWeight: '700', color: 'var(--accent-color)', fontSize: '1rem', letterSpacing: '0.5px' }}>Nuestras Redes:</span>
+          <div className="social-links" style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'nowrap' }}>
+            <span style={{ fontWeight: '700', color: 'var(--accent-color)', fontSize: '0.95rem', letterSpacing: '0.5px', whiteSpace: 'nowrap', marginRight: '5px' }}>Nuestras Redes:</span>
             <a href="https://linkedin.com/company/telredsat" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
@@ -30,6 +30,8 @@ export default function Footer() {
               </svg>
             </a>
           </div>
+
+
         </div>
         <div className="footer-col">
           <h4>Soluciones</h4>
@@ -48,6 +50,24 @@ export default function Footer() {
             <li><Link href="#">Transporte</Link></li>
             <li><Link href="#">Seguridad</Link></li>
           </ul>
+        </div>
+        <div className="footer-col">
+          <h4>Regulado por</h4>
+          
+          <p style={{ margin: '0 0 8px 0', fontSize: '0.9rem', color: '#a9b5c5' }}>RM 1005-2019-MTC/01.03</p>
+          <p style={{ margin: '0 0 15px 0', fontSize: '0.9rem', color: '#a9b5c5' }}>RD- 383-2019-MTC/27</p>
+          
+          <p style={{ margin: '0 0 15px 0', fontSize: '0.85rem', color: '#a9b5c5', lineHeight: '1.4' }}>
+            Autorizados por el MTC a brindar<br/><strong style={{ color: '#fff' }}>Servicios Móviles por Satélite</strong>
+          </p>
+
+          <div style={{ background: '#fff', padding: '5px 10px', borderRadius: '4px', display: 'inline-block' }}>
+            <img 
+              src="/mtc-logo.png" 
+              alt="MTC Perú" 
+              style={{ height: '35px', display: 'block' }} 
+            />
+          </div>
         </div>
         <div className="footer-col footer-contact">
           <h4>Contacto</h4>

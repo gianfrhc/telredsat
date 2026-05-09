@@ -1,3 +1,5 @@
+export const metadata = { title: 'Minería' };
+
 export default function IndustriaMineria() {
   return (
     <div className="internal-page">

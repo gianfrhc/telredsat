@@ -1,3 +1,5 @@
+export const metadata = { title: 'Rastreo GPS Satelital' };
+
 export default function RastreoGPS() {
   return (
     <div className="internal-page">

@@ -1,3 +1,5 @@
+export const metadata = { title: 'Internet Satelital (VSAT)' };
+
 export default function InternetSatelital() {
   return (
     <div className="internal-page">

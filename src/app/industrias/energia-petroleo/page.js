@@ -1,3 +1,5 @@
+export const metadata = { title: 'Energía y Petróleo' };
+
 export default function IndustriaEnergia() {
   return (
     <div className="internal-page">

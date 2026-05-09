@@ -8,7 +8,7 @@ const partners = [
   "logo satcom.svg",
   "logo spot.svg",
   "logo starlink.svg",
-  "logo teltonika.png"
+  "logo teltonika.svg"
 ];
 
 export default function Home() {
@@ -128,14 +128,24 @@ export default function Home() {
         <PartnersMarquee partners={partners} />
       </section>
 
-      {/* Por qué elegirnos Section */}
+      {/* Por qué elegirnos / Nosotros Section */}
       <section id="nosotros" className="section-padding bg-dark" style={{ paddingBottom: '40px' }}>
         <div className="container">
-          <h2 className="section-title text-white">¿Por qué confiar en Telredsat?</h2>
+          <h2 className="section-title text-white">Sobre Telredsat S.A.C.</h2>
+          
+          <div style={{ maxWidth: '900px', margin: '0 auto 60px', textAlign: 'center', color: '#a9b5c5', fontSize: '1.15rem', lineHeight: '1.8' }}>
+            <p style={{ marginBottom: '20px' }}>
+              Somos una <strong>compañía peruana de telecomunicaciones (RUC: 20520524836)</strong> oficialmente registrada y autorizada por el MTC. Nos especializamos en resolver el mayor desafío de las industrias críticas: la falta de cobertura en zonas remotas y de difícil acceso.
+            </p>
+            <p>
+              Sabemos que en minería, petróleo, transporte o seguridad ciudadana, un minuto de desconexión puede significar grandes pérdidas o riesgos humanos. Por eso, integramos tecnología satelital de clase mundial para garantizar <strong>comunicación continua, segura y de alta disponibilidad</strong>, sin importar qué tan hostil sea el entorno.
+            </p>
+          </div>
+
           <div className="grid-3 stats">
             <div className="stat-box">
-              <h3>99.9%</h3>
-              <p>Uptime Garantizado</p>
+              <h3>100%</h3>
+              <p>Cobertura Global Satelital</p>
             </div>
             <div className="stat-box">
               <h3>24/7</h3>
@@ -148,12 +158,30 @@ export default function Home() {
           </div>
 
           <div style={{ marginTop: '60px', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '50px', textAlign: 'center' }}>
-            <h3 style={{ color: 'var(--accent-color)', marginBottom: '40px', fontSize: '2rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px' }}>Certificaciones Internacionales</h3>
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '40px', flexWrap: 'wrap', alignItems: 'center' }}>
-              <img className="iso-badge" src="/iso/ISO%209001.jpg" alt="ISO 9001" style={{ height: '90px', borderRadius: '6px', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }} />
-              <img className="iso-badge" src="/iso/ISO%2014001.jpg" alt="ISO 14001" style={{ height: '90px', borderRadius: '6px', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }} />
-              <img className="iso-badge" src="/iso/ISO%2027001.jpg" alt="ISO 27001" style={{ height: '90px', borderRadius: '6px', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }} />
-              <img className="iso-badge" src="/iso/ISO%2037001.jpg" alt="ISO 37001" style={{ height: '90px', borderRadius: '6px', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }} />
+            <h3 style={{ color: 'var(--accent-color)', marginBottom: '50px', fontSize: '2rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px' }}>Certificaciones Internacionales</h3>
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '40px' }}>
+              {[
+                { iso: '9001', label: 'CALIDAD' },
+                { iso: '14001', label: 'AMBIENTAL' },
+                { iso: '27001', label: 'SEGURIDAD' },
+                { iso: '37001', label: 'ANTISOBORNO' }
+              ].map((cert) => (
+                <div key={cert.iso} className="iso-shield-wrapper iso-pro-card" style={{ padding: '20px', borderRadius: '16px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                  <img 
+                    src={`/iso/ISO_${cert.iso}_Badge.png`} 
+                    alt={`Certificación ISO ${cert.iso}`} 
+                    style={{ 
+                      width: '160px', 
+                      height: 'auto', 
+                      filter: 'drop-shadow(0px 15px 25px rgba(0,0,0,0.4))',
+                      marginBottom: '15px'
+                    }} 
+                  />
+                  <span style={{ fontFamily: "'Montserrat', sans-serif", fontSize: '13px', fontWeight: '800', color: '#ffffff', letterSpacing: '1.5px', textShadow: '0 0 10px rgba(255,255,255,0.3)' }}>
+                    {cert.label}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

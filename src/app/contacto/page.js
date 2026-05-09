@@ -23,16 +23,17 @@ export default function Contacto() {
         body: JSON.stringify(data)
       });
       
-      if (response.ok) {
+      const result = await response.json();
+
+      if (response.ok && result.success !== "false") {
         setStatus('success');
         form.reset();
       } else {
-        const result = await response.json();
-        console.error(result);
+        console.error("FormSubmit Error:", result);
         setStatus('error');
       }
     } catch (error) {
-      console.error(error);
+      console.error("Fetch Error:", error);
       setStatus('error');
     }
   };
